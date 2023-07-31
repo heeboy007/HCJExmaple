@@ -1,0 +1,21 @@
+#signup label {
+	float: left;
+	font-size: 13px;
+	width: 110px;
+	clear: left;
+	margin: 5px;
+}
+
+#signup select {
+	float: left;
+	font-size: 13px;
+	width: 110px;
+	margin: 5px;
+}
+
+
+#signup input {
+	float: left;
+	font-size: 13px;
+	margin: 5px;
+}
