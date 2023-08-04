@@ -1,0 +1,29 @@
+#signup label {
+	float: left;
+	font-size: 13px;
+	width: 110px;
+	clear: left;
+	margin: 5px;
+}
+
+#signup select {
+	float: left;
+	font-size: 13px;
+	width: 110px;
+	margin: 5px;
+}
+
+
+#signup input[type=text], #signup input[type=password], #signup input[type=tel], #signup input[type=email] {
+	float: left;
+	font-size: 13px;
+	margin: 5px;
+}
+
+#signup input[required] {
+	border: 1px red solid;
+}
+
+#signup input[readonly] {
+	border: none;
+}
