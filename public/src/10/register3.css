@@ -1,0 +1,73 @@
+body {
+	background-color: grey;
+}
+
+#signup {
+	background-color: white;
+	width: 500px;
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#signup fieldset {
+	margin: 15px;
+}
+
+#signup label {
+	float: left;
+	font-size: 13px;
+	width: 110px;
+	clear: left;
+	margin: 5px;
+}
+
+#signup select {
+	float: left;
+	font-size: 13px;
+	width: 110px;
+	margin: 5px;
+}
+
+
+#signup input[type=text], #signup input[type=password], #signup input[type=tel], #signup input[type=email] {
+	float: left;
+	font-size: 13px;
+	margin: 5px;
+}
+
+#signup input[required] {
+	border: 1px red solid;
+}
+
+#signup input[readonly] {
+	border: none;
+}
+
+#signup input[type=submit] {
+	font-size: 20px;
+	height: 46px;
+	
+	padding: 0 20px;
+	
+	border: 1px solid black;
+	border-radius: 23px;
+	
+	background-color: #ddd;
+	color: black;
+}
+
+#signup input[type=submit]:hover {
+	background-color: black;
+	color: white;
+}
+
+#signup fieldset:last-of-type {
+	border: none;
+	margin-bottom: 0;
+}
+
+#signup fieldset:last-of-type div {
+	display: flex;
+	justify-content: center;
+}
