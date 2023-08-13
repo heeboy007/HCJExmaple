@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./register2.css">
+	<style>
+		#signup input:checked + label {
+			color: red;
+			font-weight: bold;
+		}  
+		
+		#signup label {
+			margin: 0 auto;
+		}
+		
+		ul{
+			text-align: center;
+    		/*list-style-position: inside;*/
+			display: table;
+			margin: 0 auto;
+		}
+	</style>
+  </head>
+  <body>
+    <form id="signup">
+      <fieldset>
+        <legend>사용자 정보</legend>
+          <label for="uid">아이디</label><input required type="text" id="uid">
+		  <label for="pw1">비밀번호</label><input required type="password" id="pw1">
+          <label for="pw2">비밀번호 확인</label><input required type="password" id="pw2">
+		  <label for="ugrade">회원등급</label>
+			<select readonly name="select-grade" id="ugrade">
+				<option value="semi-member">
+					준회원
+				</option>
+			</select>
+      </fieldset>
+	  <fieldset>
+		<legend>객실 정보</legend>
+		<ul>
+			<li>
+				<input type="radio" name="room" id="basic">
+				<label for="basic">기본형(최대 2인)</label>
+			</li>
+			<li>
+				<input type="radio" name="room" id="family">
+				<label for="family">가족형(최대 8인)</label>
+			</li>	
+		</ul>  
+	  </fieldset>
+      <fieldset>
+        <legend>개인 정보</legend>
+		<label for="umail">이메일</label><input required type="email" id="umail">
+        <label for="uname">이름</label><input required type="text" id="uname" placeholder="5자 미만 공백없이">
+		<label for="uphone">연락처</label><input type="tel" id="uphone">
+      </fieldset>
+	  <fieldset>
+		  <div id="buttons">
+			<input type="submit" value="가입하기">
+			<input type="reset" value="취소">
+		  </div>
+	  </fieldset>
+    </form>
+  </body>
+</html>
