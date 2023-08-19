@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<style>
+		section {
+			border: 1px solid black;
+			display: inline-block;
+			margin: 150px;
+		}
+		
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			box-sizing: border-box;
+		}
+		
+		.pers {
+			perspective: 300px;
+		}
+		
+		.pers > div {
+			transition: all 3s;
+		}
+		
+		#rotatex:hover {
+			transform: rotateX(55deg);
+		}
+		
+		#rotatey:hover {
+			transform: rotateY(55deg);
+		}
+		
+		#rotatez:hover {
+			transform: rotateZ(50deg);
+		}
+		
+		#rotate3:hover {
+			transform: rotate3d(2.5, 1.2, -1.5, 55deg);
+		}
+	</style>
+  </head>
+  <body>
+	<section class="pers"><div id="rotatex"></div></section>
+	<section class="pers"><div id="rotatey"></div></section>
+	<section class="pers"><div id="rotatez"></div></section>
+	<section class="pers"><div id="rotate3"></div></section>
+  </body>
+</html>

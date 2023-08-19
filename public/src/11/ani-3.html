@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<style>
+		@keyframes background {
+			from { background-color: red; }
+			50% { background-color: green; }
+			to { background-color: blue; }
+		}
+		
+		@keyframes rotate {
+			from { transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+			50% { transform: perspective(120px) rotateX(-180deg) rotateY(0deg); }
+			to { transform: perspective(120px) rotateX(-180deg) rotateY(-180deg); }
+		}
+		
+		div {
+			width: 200px;
+			height: 200px;
+			margin: 50px;
+		}
+		
+		#box1 {
+			animation: rotate 1.5s alternate infinite, background 1.5s alternate infinite;
+		}
+		
+	</style>
+  </head>
+  <body>
+	<section><div id="box1"></div></section>
+	<section><div id="box2"></div></section>
+  </body>
+</html>

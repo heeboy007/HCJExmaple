@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<style>
+		section {
+			border: 1px solid black;
+			display: inline-block;
+			margin: 150px;
+		}
+		
+		div {
+			width: 100px;
+			height: 100px;
+			background-color: orange;
+			box-sizing: border-box;
+		}
+		
+		.pers {
+			perspective: 300px;
+		}
+		
+		.pers > div {
+			transition: all 3s;
+		}
+		
+		#skewx:hover {
+			transform: skewX(30deg);
+		}
+		
+		#skewy:hover {
+			transform: skewY(15deg);
+		}
+		
+		#skewxy:hover {
+			transform: skew(-25deg, -15deg);
+		}
+	</style>
+  </head>
+  <body>
+	<section class="pers"><div id="skewx"></div></section>
+	<section class="pers"><div id="skewy"></div></section>
+	<section class="pers"><div id="skewxy"></div></section>
+  </body>
+</html>
