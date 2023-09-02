@@ -6,35 +6,46 @@
 	<style>
 		div {
 			display: flex;
-			margin: 5px;
+			padding: 5px;
 		}
 		
 		.container {
 			display: flex;
-			padding: 5px;
+			flex-flow: row wrap;
 			flex-direction: column;
 		}
-		#opt1 {
-			flex-direction: row;
+		
+		.container > div {
 			border: 1px solid black;
+			flex-flow: row wrap;
+			height: 100px;
+		}
+		
+		.container > div > div {
+			border: 1px dotted white;
+		}
+		
+		#opt1 {
+			align-content: flex-start;
 		}
 		#opt2 {
-			flex-direction: row-reverse;
-			border: 1px solid black;
+			align-content: flex-end;
 		}
 		#opt3 {
-			flex-direction: column;
-			border: 1px solid black;
+			align-content: center;
 		}
 		#opt4 {
-			flex-direction: column-reverse;
-			border: 1px solid black;
+			align-content: space-between;
+		}
+		#opt5 {
+			align-content: space-around;
+		}
+		#opt6 {
+			align-content: stretch;
 		}
 		
 		.things {
-			width: 100px;
-			height: 40px;
-			margin: 5px;
+			width: 200px;
 			background-color: black;
 			color: white;
 			display: flex;
@@ -49,21 +60,37 @@
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
 		  </div>
 		  <div id="opt2">
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
 		  </div>
 		  <div id="opt3">
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
 		  </div>
 		  <div id="opt4">
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
+		  </div>
+		  <div id="opt5">
+			  <div class="things">1</div>
+			  <div class="things">2</div>
+			  <div class="things">3</div>
+			  <div class="things">4</div>
+		  </div>
+		  <div id="opt6">
+			  <div class="things">1</div>
+			  <div class="things">2</div>
+			  <div class="things">3</div>
+			  <div class="things">4</div>
 		  </div>
 	  </div>
   </body>

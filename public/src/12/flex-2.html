@@ -14,21 +14,18 @@
 			padding: 5px;
 			flex-direction: column;
 		}
-		#opt1 {
-			flex-direction: row;
+		
+		.container > div {
 			border: 1px solid black;
+		}
+		#opt1 {
+			flex-wrap: nowrap;
 		}
 		#opt2 {
-			flex-direction: row-reverse;
-			border: 1px solid black;
+			flex-wrap: wrap;
 		}
 		#opt3 {
-			flex-direction: column;
-			border: 1px solid black;
-		}
-		#opt4 {
-			flex-direction: column-reverse;
-			border: 1px solid black;
+			flex-wrap: wrap-reverse;
 		}
 		
 		.things {
@@ -49,21 +46,25 @@
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
+			  <div class="things">5</div>
+			  <div class="things">6</div>
 		  </div>
 		  <div id="opt2">
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
+			  <div class="things">5</div>
+			  <div class="things">6</div>
 		  </div>
 		  <div id="opt3">
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
-		  </div>
-		  <div id="opt4">
-			  <div class="things">1</div>
-			  <div class="things">2</div>
-			  <div class="things">3</div>
+			  <div class="things">4</div>
+			  <div class="things">5</div>
+			  <div class="things">6</div>
 		  </div>
 	  </div>
   </body>

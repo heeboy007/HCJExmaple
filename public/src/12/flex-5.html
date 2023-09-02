@@ -14,27 +14,39 @@
 			padding: 5px;
 			flex-direction: column;
 		}
-		#opt1 {
-			flex-direction: row;
+		
+		.container > div {
 			border: 1px solid black;
+			height: 100px;
+		}
+		#opt1 {
+			align-items: flex-start;
 		}
 		#opt2 {
-			flex-direction: row-reverse;
-			border: 1px solid black;
+			align-items: flex-end;
 		}
 		#opt3 {
-			flex-direction: column;
-			border: 1px solid black;
+			align-items: center;
 		}
 		#opt4 {
-			flex-direction: column-reverse;
-			border: 1px solid black;
+			align-items: baseline;
+		}
+		#opt5 {
+			align-items: stretch;
 		}
 		
 		.things {
 			width: 100px;
 			height: 40px;
-			margin: 5px;
+			background-color: black;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		
+		.things_without_height {
+			width: 100px;
 			background-color: black;
 			color: white;
 			display: flex;
@@ -49,21 +61,31 @@
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
 		  </div>
 		  <div id="opt2">
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
 		  </div>
 		  <div id="opt3">
 			  <div class="things">1</div>
 			  <div class="things">2</div>
 			  <div class="things">3</div>
+			  <div class="things">4</div>
 		  </div>
 		  <div id="opt4">
 			  <div class="things">1</div>
 			  <div class="things">2</div>
-			  <div class="things">3</div>
+			  <div class="things" style="height:80px;">3</div>
+			  <div class="things">4</div>
+		  </div>
+		  <div id="opt5">
+			  <div class="things_without_height">1</div>
+			  <div class="things_without_height">2</div>
+			  <div class="things_without_height">3</div>
+			  <div class="things_without_height">4</div>
 		  </div>
 	  </div>
   </body>
