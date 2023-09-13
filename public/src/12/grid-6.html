@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        #wrapper {
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 100px);
+            grid-template-areas: 
+                "box1 box1 box1"
+                "box2 box3 box3"
+                "box2 .    box4";
+        }
+
+        .box1 {
+            background-color: #3689ff;
+            grid-area: box1;
+        }
+
+        .box2 {
+            background-color: #00cf12;
+            grid-area: box2;
+        }
+
+        .box3 {
+            background-color: #ff9019;
+            grid-area: box3;
+        }
+        
+        .box4 {
+            background-color: #ffd000;
+            grid-area: box4;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="items box1">Vanitas Vanitatum et omnia Vanitas</div>
+        <div class="items box2">Vanitas Vanitatum et omnia Vanitas</div>
+        <div class="items box3">Vanitas Vanitatum et omnia Vanitas</div>
+        <div class="items box4">Vanitas Vanitatum et omnia Vanitas</div>
+    </div>
+</body>
