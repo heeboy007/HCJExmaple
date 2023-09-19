@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script</title>
+</head>
+<body>
+    <h1>어서오세요.</h1>
+
+    <script>
+        var session = prompt("관심 세션을 선택해 주세요. 1-마케팅, 2-개발, 3-디자인");
+        
+        switch(session) {
+            case "1":
+                document.write("<p>마케팅 세션은 <strong>201호</strong>에서</p>");
+                break;
+            case "2":
+                document.write("<p>개발 세션은 <strong>203호</strong>에서</p>");
+                break;
+            case "3":
+                document.write("<p>디자인 세션은 <strong>205호</strong>에서</p>");
+                break;
+            default:
+                alert("뭔가 문제가 있어!");
+                break;
+        }
+    </script>
+</body>
