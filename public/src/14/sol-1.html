@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .title {
+                display: flex;
+                justify-content: center;
+                font-weight: bold;
+            }
+            .normal {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="title">
+            4의 배수일까 아닐까
+        </h1>
+        <h3 class="normal" id="output">
+        </h3>
+        <script>
+            var number = Number(prompt('숫자를 입력하세요'));
+            if(number % 4 === 0){
+                document.getElementById("output").innerHTML = number + "는 4의 배수입니다.";
+            } else {
+                document.getElementById("output").innerHTML = number + "는 4의 배수가 아닙니다.";
+            }
+        </script>
+    </body>
+</html>
