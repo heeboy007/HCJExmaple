@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #background {
+                background: url(resources/sample.jpg) no-repeat;
+                background-size: cover;
+                width: 800px;
+                height: 500px;
+                position: relative;
+            }
+
+            #open {
+                border: 1px solid white;
+                background-color: grey;
+                position: absolute;
+                bottom: 50px;
+                left: 50px;
+                text-decoration: none;
+                color: black;
+                padding: 10px;
+            }
+
+            #desc {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="background">
+            <a id="open" href="#">상세 설명 보기</a>
+        </div>
+        <p id="desc">
+            뭐 이런 저런 설명이다.
+            <button>상세 설명 닫기</button>
+        </p>
+        <script>
+            document.getElementById('open').onclick = showDetail;
+            document.querySelector('#desc > button').onclick = hideDetail;
+
+            function showDetail() {
+                document.getElementById('desc').style.display = "block";
+                document.getElementById('open').style.display = "none";
+            }
+
+            function hideDetail() {
+                document.getElementById('desc').style.display = "none";
+                document.getElementById('open').style.display = "block";
+            }
+        </script>
+    </body>
+</html>

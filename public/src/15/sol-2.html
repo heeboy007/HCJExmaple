@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            var num1 = parseInt(prompt('비교할 첫번째 값'));
+            var num2 = parseInt(prompt('비교할 두번째 값'));
+
+            function compare(a, b) {
+                if(a > b) {
+                    alert(a + "(이)가 " + b + " 보다 더 큽니다.");
+                } else if (a === b) {
+                    alert("같습니다.");
+                } else {
+                    alert(b + "(이)가 " + a + " 보다 더 큽니다.");
+                }
+            }
+
+            compare(num1, num2);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .accent {
+                color: skyblue;
+                font-size: 40px;
+                font-weight: bold;
+                padding: 10px;
+            }
+            
+            body {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            (function() {
+                var userName = prompt("이름을 입력하세요");
+                document.write("안녕하세요? <span class='accent'>" + userName + "</span>님!");
+            }());
+        </script>
+    </body>
+</html>

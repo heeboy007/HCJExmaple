@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #result {
+                width: 300px;
+                height: 200px;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#" onclick="changeBg('green')">Green</a></li>
+            <li><a href="#" onclick="changeBg('orange')">Orange</a></li>
+            <li><a href="#" onclick="changeBg('purple')">Purple</a></li>
+        </ul>
+        <div id="result"></div>
+        <script>
+            function changeBg(color){
+                var result = document.getElementById("result");
+                result.style.backgroundColor = color;
+            }
+        </script>
+    </body>
+</html>
