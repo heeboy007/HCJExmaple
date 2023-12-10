@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>현재 시각 <span id="current" class="display"></span></p>
+        <script>
+            setInterval(displayNow, 1000);
+
+            function displayNow() {
+                var now = new Date();
+                var currnetTime = now.toLocaleTimeString();
+                document.querySelector("#current").innerHTML= currnetTime;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <button onclick="openCenter('sol-1.html', 'pop', 400, 200)">현재 시각 보기</button>
+        <script>
+            function openCenter(doc, win, w, h){
+                var left = (window.innerWidth - w) / 2;
+                var top = (window.innerHeight - h) / 2;
+                var opt = "left=" + left + ",top=" + top + ",width=" + w + ",height=" + h;
+                window.open(doc, win, opt);
+            }
+        </script>
+    </body>
+</html>
