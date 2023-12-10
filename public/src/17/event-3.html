@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+    </head>
+    <body>
+        <img src="resources/sample.jpg" id="display" width="600" height="600">
+        <script>
+            var display = document.getElementById('display');
+            display.onclick = function (e) {
+                alert("이벤트 유형: " + event.type + ",이벤트 발생 위치 :" + event.pageX + "," + event.pageY);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+    </head>
+    <body>
+        <p>바로 함수 선언 후 이용 예제</p>
+        <img src="resources/sample.jpg" id="display" width="600" height="600">
+        <script>
+            var cover = document.getElementById('display');
+            cover.addEventListener("mouseover", function (){
+                cover.src = "resources/sample3.jpg"
+            });
+            cover.addEventListener("mouseout", function () {
+                cover.src = "resources/sample.jpg"
+            });
+        </script>
+    </body>
+</html>

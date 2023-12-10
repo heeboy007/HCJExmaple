@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+    </head>
+    <body>
+        <img src="resources/sample.jpg" id="display" width="600" height="600">
+        <script>
+            var cover = document.getElementById('display');
+            cover.addEventListener("mouseover", changePic);
+            cover.addEventListener("mouseout", originPic);
+
+            function changePic(){
+                cover.src = "resources/sample3.jpg"
+            }
+
+            function originPic() {
+                cover.src = "resources/sample.jpg"
+            }
+        </script>
+    </body>
+</html>

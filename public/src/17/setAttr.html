@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="resources/sample.jpg" id="display" width="600" height="600">
+        <div class="container"> 
+            <img src="resources/sample.jpg" id="sample" width="190" height="190" onclick="changePic(this.src)">
+            <img src="resources/sample2.jpg" id="sample2" width="190" height="190" onclick="changePic(this.src)">
+            <img src="resources/sample3.jpg" id="sample3" width="190" height="190" onclick="changePic(this.src)">
+        </div>
+        <script>
+            function changePic(src){
+                var display = document.getElementById('display');
+                display.setAttribute("src", src);
+            }
+        </script>
+    </body>
+</html>

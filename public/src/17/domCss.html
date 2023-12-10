@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+        <style>
+            #rect {
+                width: 500px;
+                height: 500px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="rect">
+        </div>
+        <script>
+            var myRect = document.querySelector('#rect');
+            myRect.addEventListener("mouseover", function(){
+                myRect.style.backgroundColor = "green";
+                myRect.style.borderRadius = "50%";
+            });
+            myRect.addEventListener("mouseout", function(){
+                myRect.style.backgroundColor = "";
+                myRect.style.borderRadius = "";
+            });
+        </script>
+    </body>
+</html>

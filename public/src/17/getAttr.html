@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+    </head>
+    <body>
+        <img src="resources/sample.jpg" alt="바다 사진" id="sea" width="200" height="200" onclick="displaySrc()">
+
+        <script>
+            function displaySrc(){
+                var sea = document.querySelector("#sea");
+                alert("이미지 소스: " + sea.getAttribute("src"));
+            }
+        </script>
+    </body>
+</html>
