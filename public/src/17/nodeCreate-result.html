@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Web Programming</h1>
+            <p>공부할 주제를 기록해보세요.</p>
+            <input id="subject" type="text">
+            <button onclick="newRegister()">추가</button>
+            <ul id="itemlist"></ul>
+        </div>
+        <script>
+            function newRegister(){
+                var newItem = document.createElement("li");
+                var subject = document.querySelector("#subject");
+                var newText = document.createTextNode(subject.value);
+                var itemList = document.querySelector("#itemlist");
+
+                newItem.appendChild(newText);
+                newItem.addEventListener("click", function() {
+                    itemList.removeChild(this);
+                });
+
+                itemList.appendChild(newItem);
+
+                subject.value = "";
+            }
+        </script>
+    </body>
+</html>

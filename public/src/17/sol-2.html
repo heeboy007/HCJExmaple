@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+
+            table td {
+                font-size: 25px;
+                padding: 10px;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <input id="inputRow" value="1" type="text">행
+            <input id="inputColumn" value="1" type="text">열
+            <button onclick="makeTable()">작성</button>
+            <table id="mainTable"></table>
+        </div>
+        <script>
+            function makeTable() {
+                var row = parseInt(document.getElementById("inputRow").value) || 0;
+                var column = parseInt(document.getElementById("inputColumn").value) || 0;
+
+                var table = document.getElementById("mainTable");
+                for(let i = 0; i < row; i++) {
+                    let currTr = document.createElement("tr");
+                    for(let j = 0; j < column; j++) {
+                        let textNode = document.createTextNode(i + ", " + j);
+                        let currTd = document.createElement("td");
+                        currTd.appendChild(textNode);
+                        currTr.appendChild(currTd);
+                    }
+                    table.appendChild(currTr);
+                }
+            }
+        </script>
+    </body>
+</html>

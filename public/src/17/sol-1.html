@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Tree 알아보기</title>
+        <style>
+            ul {
+                list-style-type: none;
+            }
+
+            ul li {
+                font-size: 25px;
+            }
+
+            ul span {
+                margin-right: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>할 일 목록</h1>
+            <ul id="itemlist">
+                <li><span class="check">C</span>할 일 1</li>
+                <li><span class="check">C</span>할 일 2</li>
+                <li><span class="check">C</span>할 일 3</li>
+                <li><span class="check">C</span>할 일 4</li>
+                <li><span class="check">C</span>할 일 5</li>
+            </ul>
+        </div>
+        <script>
+            var itemList = document.querySelectorAll(".check");
+            for(let i = 0; i <= itemList.length; i++) {
+                itemList[i].addEventListener("click", function() {
+                    var nodeStyle = this.style;
+                    nodeStyle.color = "#ccc";
+                    nodeStyle.textDecoration = "line-through";
+                    var parentStyle = this.parentNode.style;
+                    parentStyle.color = "#ccc";
+                    parentStyle.textDecoration = "line-through";
+                });
+            }
+        </script>
+    </body>
+</html>

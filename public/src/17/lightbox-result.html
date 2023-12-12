@@ -5,11 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DOM Tree 알아보기</title>
         <style>
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            html {
+                width: 100%;
+                height: 100%;
+            }
+
+            body {
+                position: relative;
+                width: 100%;
+                height: 100%;
+            }
+
             .row ul {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 list-style: none;
+                
             }
 
             .row ul * {
@@ -18,11 +35,21 @@
             }
 
             #lightbox {
-                display: none;
+                display: flex;
+                position: absolute;
                 left: 0;
                 top: 0;
                 width: 100%;
                 height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #lightbox img {
+                width: 500px;
+                height: 500px;
             }
         </style>
     </head>
@@ -48,7 +75,7 @@
 
             function showLightBox() {
                 var bigLocation = this.getAttribute("data-src");
-                lightbox.style.display = "absolute";
+                lightbox.style.display = "flex";
                 lightboxImage.setAttribute("src", bigLocation);
             }
 
