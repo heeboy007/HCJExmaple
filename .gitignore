@@ -1,1 +1,6 @@
-goorm.manifest
+# ignore binary
+node_modules/
+node_modules/*
+
+# ignore npm settings
+.npmrc
