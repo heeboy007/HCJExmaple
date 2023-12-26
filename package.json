@@ -1,8 +1,6 @@
 {
   "version": "1.0.0",
   "dependencies": {
-    "express": "^4.17.21",
-    "request": "0.0.1",
-    "request-promise": "^0.0.1"
+    "express": "^4.17.21"
   }
 }
